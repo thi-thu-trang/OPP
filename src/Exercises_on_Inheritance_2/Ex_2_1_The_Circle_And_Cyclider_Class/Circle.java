@@ -1,4 +1,4 @@
-package Exercises_on_Inheritance_2;
+package Exercises_on_Inheritance_2.Ex_2_1_The_Circle_And_Cyclider_Class;
 
 public class Circle {
     private double radius;
