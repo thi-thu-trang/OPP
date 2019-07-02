@@ -10,14 +10,7 @@ public class MyPolynomial {
     }
 
     // p(x)=x^{4}+5x^{3}-4x^{2}+3x+m}
-    public MyPolynomial() {
-        Scanner in = new Scanner(System.in);
-        int degree = in.nextInt();      // read the degree
-        coeffs = new double[degree + 1];  // allocate the array
-        for (int i = 0; i < coeffs.length; ++i) {
-            coeffs[i] = in.nextDouble();
-        }
-    }
+
 
     public int getDegree() {
         return this.coeffs.length - 1;
@@ -64,7 +57,11 @@ public class MyPolynomial {
         }
         poly1 = new MyPolynomial(coeffs);
         return poly1;
+    }/*
+    public MyPolynomial Multiply(MyPolynomial another1){
+        int mx = coeffs.length + another1.
     }
+    */
 }
 
 

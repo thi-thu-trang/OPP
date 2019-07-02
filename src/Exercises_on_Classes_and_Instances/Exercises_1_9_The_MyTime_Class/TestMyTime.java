@@ -4,8 +4,9 @@ public class TestMyTime {
     public static void main(String[] args) {
         MyTime lan1 = new MyTime(0, 1, 1);
         System.out.println(lan1);
-        //stem.out.println(lan1.previousSecond());
-        //System.out.println(lan1.previousMinute());
-        System.out.println(lan1.nextSecond());
+        System.out.println(lan1.previousSecond());
+        System.out.println(lan1.previousMinute());
+        System.out.println(lan1.previousSecond());
+        //System.out.println(lan1.nextSecond());
     }
 }

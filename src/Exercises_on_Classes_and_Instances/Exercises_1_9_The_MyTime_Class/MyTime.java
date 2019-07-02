@@ -74,7 +74,7 @@ public class MyTime {
     }
 
     public MyTime previousMinute() {
-        if (this.minute != 0) {
+        if (this.minute == 0) {
             this.minute--;
         } else {
             this.setMinute(0);
