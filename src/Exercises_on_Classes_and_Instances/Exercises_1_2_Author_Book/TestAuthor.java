@@ -1,7 +1,5 @@
 package Exercises_on_Classes_and_Instances.Exercises_1_2_Author_Book;
 
-import Exercise_The_Authour_and_Book_Classes1_2.Author;
-
 public class TestAuthor {
     public static void main(String[] args) {
 
