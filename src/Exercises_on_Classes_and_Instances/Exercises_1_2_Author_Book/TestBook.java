@@ -1,10 +1,14 @@
 package Exercises_on_Classes_and_Instances.Exercises_1_2_Author_Book;
 
+import java.util.function.BinaryOperator;
+
 public class TestBook {
     public static void main(String[] args) {
         Author anAuthor = new Author("thutrang", "thithutrang1706@gmail.com", 'n');
         Book aBook = new Book("java for dummy", anAuthor, 19.95, 1000);
+        Book aBook1 = new Book("java", 200.3, new Author("thu trang", "thithutrang1706@gmail.com", 'n'));
         System.out.println(aBook);
+        System.out.println(aBook1);
         aBook.setPrice(199.95);
         aBook.setQtyInStock(25000);
         System.out.println(aBook.getPrice() + " " + aBook.getQtyInStock());
