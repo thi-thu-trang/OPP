@@ -3,9 +3,10 @@ package chuong4.Chuong4_Bai1;
 import java.util.Scanner;
 
 class NoiThanh extends ChuyenXe {
-    Scanner in = new Scanner(System.in);
+
     private String SoTuyen;
     private double km;
+    Scanner in = new Scanner(System.in);
 
     public NoiThanh() {
         super();
@@ -35,24 +36,8 @@ class NoiThanh extends ChuyenXe {
         return km;
     }
 
-    public void nhap() {
-        super.nhap();
-        System.out.println("Nhap So Tuyen: ");
-        System.out.println('\t');
-        this.SoTuyen = in.next();
-        System.out.println('\t');
-        System.out.println("So Km: ");
-        this.km = in.nextDouble();
-    }
-
     public String toString() {
         return "Chuyen Xe Noi Thanh " + super.toString() + "\n So Tuyen: " + this.SoTuyen + "\nSo Km: " + this.km + "\nDoanh Thu: " + this.Doanhthu;
     }
 
-
 }
-
-
-
-
-

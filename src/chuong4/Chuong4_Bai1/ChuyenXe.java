@@ -3,10 +3,12 @@ package chuong4.Chuong4_Bai1;
 import java.util.Scanner;
 
 public class ChuyenXe {
-    protected double Doanhthu;
-    Scanner in = new Scanner(System.in);
-    private String Mschuyen, Hoten, Soxe;
 
+    protected double Doanhthu;
+    protected String Mschuyen;
+    protected String Hoten;
+    protected String Soxe;
+    Scanner in = new Scanner(System.in);
     public ChuyenXe() {
         this.Mschuyen = "";
         this.Hoten = "";
@@ -51,17 +53,6 @@ public class ChuyenXe {
 
     protected void setDoanhthu(double doanhthu) {
         Doanhthu = doanhthu;
-    }
-
-    protected void nhap() {
-        System.out.println("Nhap MaSo Chuyen: ");
-        this.Mschuyen = in.nextLine();
-        System.out.println("Ho Ten Tai Xe: ");
-        this.Hoten = in.nextLine();
-        System.out.println("So Xe: ");
-        this.Soxe = in.nextLine();
-        System.out.println("Doanh Thu: ");
-        this.Doanhthu = in.nextDouble();
     }
 
     public String toString() {

@@ -72,7 +72,7 @@ public class Book implements IBook {
     }
 
     @Override
-    public void Displaỵ() {
+    public void displaỵ() {
         System.out.println("Id: " + this.ID +
                 " Name: " + this.Name +
                 " Launguage: " + this.Language +

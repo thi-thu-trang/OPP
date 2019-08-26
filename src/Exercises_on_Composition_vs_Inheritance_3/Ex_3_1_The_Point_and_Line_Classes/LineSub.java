@@ -1,8 +1,8 @@
 package Exercises_on_Composition_vs_Inheritance_3.Ex_3_1_The_Point_and_Line_Classes;
 
 public class LineSub extends Point {
-    Point end;
 
+    Point end;
 
     public LineSub(int beginX, int beginY, int endX, int endY) {
         super(beginX, beginY);

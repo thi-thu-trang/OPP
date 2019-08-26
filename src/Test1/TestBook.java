@@ -56,7 +56,7 @@ public class TestBook {
                 }
                 case 2: {
                     for (Book book : list) {
-                        book.Displaỵ();
+                        book.displaỵ();
                     }
                     break;
                 }

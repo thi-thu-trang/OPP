@@ -1,6 +1,7 @@
 package chuong4.Chuong4_Bai1;
 
 class NgoaiThanh extends ChuyenXe {
+
     private String NoiDen;
     private int SoNgay;
 
@@ -31,17 +32,6 @@ class NgoaiThanh extends ChuyenXe {
 
     public void setSoNgay(int soNgay) {
         SoNgay = soNgay;
-    }
-
-    public void nhap() {
-        super.nhap();
-        System.out.println('\t');
-        System.out.println("Noi Den: ");
-        System.out.println('\t');
-        this.NoiDen = in.next();
-        System.out.println('\t');
-        System.out.println("So Ngay: ");
-        this.SoNgay = in.nextInt();
     }
 
     public String toString() {
