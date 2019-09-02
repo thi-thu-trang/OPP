@@ -1,4 +1,7 @@
 package DuyTan;
 
-public class IThueBao {
+public interface IThueBao {
+
+    double tinhCuoc();
+
 }
