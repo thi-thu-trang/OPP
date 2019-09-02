@@ -1,6 +1,6 @@
 package DuyTan;
 
-public class ThueBao {
+public class ThueBao implements IThueBao {
     private String maTB;
     private String tenTB;
     private double khuyenMai;
@@ -46,5 +46,10 @@ public class ThueBao {
                 ", tenTB='" + tenTB + '\'' +
                 ", khuyenMai=" + khuyenMai +
                 '}';
+    }
+
+    @Override
+    public double tinhCuoc() {
+        return 0;
     }
 }

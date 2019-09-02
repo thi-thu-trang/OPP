@@ -69,4 +69,10 @@ public class TBTraSau extends ThueBao {
                 ", ngayTB=" + ngayTB +
                 '}';
     }
+
+    @Override
+    public double tinhCuoc() {
+        double TC = this.soTinNhan * this.phiTinNhan + this.soCuocgoi * this.phiCuocGoi;
+        return TC;
+    }
 }
