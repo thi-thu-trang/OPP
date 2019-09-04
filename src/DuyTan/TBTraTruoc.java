@@ -23,4 +23,10 @@ public class TBTraTruoc extends ThueBao {
                 "tienNap=" + tienNap +
                 '}';
     }
+
+    @Override
+    public double tinhCuoc() {
+        double tinhCuoc = this.tienNap;
+        return tinhCuoc;
+    }
 }

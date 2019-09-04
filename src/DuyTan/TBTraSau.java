@@ -1,5 +1,8 @@
 package DuyTan;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
 import java.util.Date;
 
 public class TBTraSau extends ThueBao {
@@ -9,6 +12,7 @@ public class TBTraSau extends ThueBao {
     private double phiTinNhan;
     private double phiCuocGoi;
     private Date ngayTB;
+
 
     public TBTraSau(String maTB, String tenTB, double khuyenMai, int soTinNhan, int soCuocgoi, double phiTinNhan, double phiCuocGoi, Date ngayTB) {
         super(maTB, tenTB, khuyenMai);
@@ -51,12 +55,15 @@ public class TBTraSau extends ThueBao {
         this.phiCuocGoi = phiCuocGoi;
     }
 
-    public Date getNgayTB() {
+    public Period getNgayTB() {
+        LocalDate DateNow = LocalDate.of(Calendar.YEAR, Calendar.MONTH, Calendar.DATE);
+        LocalDate Datesd = LocalDate.of(Calendar.YEAR, Calendar.MONTH, Calendar.DATE);
+        Period ngayTB = Period.between(Datesd, DateNow);
         return ngayTB;
     }
 
-    public void setNgayTB(Date ngayTB) {
-        this.ngayTB = ngayTB;
+    public void setNgayTB(Date tb) {
+        this.ngayTB = tb;
     }
 
     @Override
@@ -75,4 +82,18 @@ public class TBTraSau extends ThueBao {
         double TC = this.soTinNhan * this.phiTinNhan + this.soCuocgoi * this.phiCuocGoi;
         return TC;
     }
+   /*
+    @Override
+    public double getKhuyenMai() {
+      //   khuyenmai*ngayTb
+        double v;
+        v = getNgayTB() * setKhuyenMai();
+        return v;
+    }
+
+
+    */
+
+
 }
+
