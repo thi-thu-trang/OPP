@@ -62,6 +62,7 @@ public class TBTraSau extends ThueBao {
         return ngayTB;
     }
 
+
     public void setNgayTB(Date tb) {
         this.ngayTB = tb;
     }

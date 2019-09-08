@@ -1,6 +1,6 @@
 package Exercises_on_Polymorphism_Abstract_4;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Exercises_on_Polymorphism_Abstract_4.Shape {
     private double width;
     private double length;
 
