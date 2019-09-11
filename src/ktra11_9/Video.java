@@ -10,6 +10,10 @@ public class Video extends Media implements InOut {
         this.time = time;
     }
 
+    public Video() {
+
+    }
+
     public double getTime() {
         return time;
     }

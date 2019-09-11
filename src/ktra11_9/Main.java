@@ -32,17 +32,18 @@ public class Main {
                     mediaArrayList.add(video);
 
             }
-            while (true) {
-                System.out.println("choice");
-                switch (n) {
-
+        }
+        while (true);
+        {
+            System.out.println("choice next ");
+            int m = scanner.nextInt();
                     case 3:
                         for (Media media : mediaArrayList) {
                             media.toString();
                         }
                     case 4:
                         ArrayList<Media> danhsach = new ArrayList<>();
-                        for (int i = 0; i < n; i++) {
+                        for (int i = 0; i < m; i++) {
                             scanner.nextLine();
                             Media x = new Media();
                             System.out.println("name media: ");
@@ -57,13 +58,19 @@ public class Main {
                                 if (o1.Name.compareTo(o2.Name) == 0) {
                                     if (o1.price == o1.price)
                                         return 0;
-                                    else
+                                    else if (o1.price > o2.price) {
+                                        return 1;
+                                    } else {
                                         return -1;
-                                } else (o1.Name.compareTo(o2.Name) != 0)
-                                return 1;
+                                    }
+                                } else
+                                    return o1.Name.compareTo(o2.Name);
                             }
                         });
-                    case 5:
+
+            case 5:
+                do {
+                    case 6:
                         System.exit(0);
                     default:
                         System.out.println("ban da nhap sai.");
@@ -72,36 +79,3 @@ public class Main {
                 }
             }
         }
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("media");
-//        int n = scanner.nextInt();
-//        ArrayList<Media> danhsach = new ArrayList<>();
-//        for (int i = 0; i < n; i++) {
-//            scanner.nextLine();
-//            Media x = new Media();
-//            System.out.println("name media: ");
-//            x.Name = scanner.nextLine();
-//            System.out.println("price: ");
-//            x.price = scanner.nextDouble();
-//            danhsach.add(x);
-//        }
-//        Collections.sort(danhsach, new Comparator<Media>() {
-//            @Override
-//            public int compare(Media o1, Media o2) {
-//                if(o1.Name.compareTo(o2.Name)==0){
-//                    if(o1.price==o1.price)
-//                        return 0;
-//                    else
-//                        return -1;
-//                }else (o1.Name.compareTo(o2.Name)!=0)
-//                        return 1;
-//            }
-//        });
-//
-//        System.out.println("danh sách sắp xếp media theo bảng chữ cái: ");
-//        for (int i = 0; i < danhsach.size(); i++) {
-//            System.out.println("name: " + danhsach.get(i).Name + "price: " + danhsach.get(i).price);
-//        }
-//    }
-
-    }

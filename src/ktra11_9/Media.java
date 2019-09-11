@@ -9,6 +9,10 @@ public class Media {
         this.price = price;
     }
 
+    public Media() {
+
+    }
+
     public String getName() {
         return Name;
     }

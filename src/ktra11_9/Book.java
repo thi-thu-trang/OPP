@@ -17,6 +17,10 @@ public class Book extends Media implements InOut {
         Author = author;
     }
 
+    public Book() {
+        super();
+    }
+
     public double getPage() {
         return page;
     }
