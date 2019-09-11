@@ -1,14 +1,15 @@
 package ktra11_9;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Book extends Media implements InOut {
 
-    List<Book> list = new ArrayList<Book>();
     private double page;
     private String Author;
+
+    public Book(String name, double price) {
+        super(name, price);
+    }
 
     public Book(String name, double price, double page, String author) {
         super(name, price);
@@ -16,8 +17,25 @@ public class Book extends Media implements InOut {
         Author = author;
     }
 
+    public double getPage() {
+        return page;
+    }
+
+    public void setPage(double page) {
+        this.page = page;
+    }
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public void setAuthor(String author) {
+        Author = author;
+    }
+
     @Override
     public void Input() {
+        super.toString();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insert page: ");
         page = scanner.nextDouble();
@@ -26,10 +44,14 @@ public class Book extends Media implements InOut {
 
     }
 
+
     @Override
-    public void show() {
-
+    public String show() {
+        return "Book{" +
+                "page=" + page +
+                ", Author='" + Author + '\'' +
+                ", Name='" + Name + '\'' +
+                ", price=" + price +
+                '}';
     }
-
-
 }

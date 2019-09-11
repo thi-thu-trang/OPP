@@ -10,17 +10,32 @@ public class Video extends Media implements InOut {
         this.time = time;
     }
 
+    public double getTime() {
+        return time;
+    }
+
+    public void setTime(double time) {
+        this.time = time;
+    }
+
     @Override
     public void Input() {
+        super.toString();
         Scanner scanner = new Scanner(System.in);
         System.out.println("time: ");
         time = scanner.nextDouble();
     }
 
     @Override
-    public void show() {
-
+    public String show() {
+        return "Video{" +
+                "time=" + time +
+                ", Name='" + Name + '\'' +
+                ", price=" + price +
+                '}';
     }
+
+
 
 
 }
