@@ -24,7 +24,7 @@ public class Video extends Media implements InOut {
 
     @Override
     public void Input() {
-        super.toString();
+        super.Input();
         Scanner scanner = new Scanner(System.in);
         System.out.println("time: ");
         time = scanner.nextDouble();
@@ -32,14 +32,10 @@ public class Video extends Media implements InOut {
 
     @Override
     public String show() {
-        return "Video{" +
+        return "Video{" + super.show() +
                 "time=" + time +
-                ", Name='" + Name + '\'' +
-                ", price=" + price +
                 '}';
     }
-
-
 
 
 }

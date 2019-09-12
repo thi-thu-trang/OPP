@@ -1,6 +1,8 @@
 package ktra11_9;
 
-public class Media {
+import java.util.Scanner;
+
+public class Media implements InOut {
     protected String Name;
     protected double price;
 
@@ -27,6 +29,24 @@ public class Media {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+
+    @Override
+    public void Input() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Insert name: ");
+        Name = scanner.nextLine();
+        System.out.println("Insert price: ");
+        price = scanner.nextDouble();
+    }
+
+    @Override
+    public String show() {
+        return "Media{" +
+                "Name='" + Name + '\'' +
+                ", price=" + price +
+                '}';
     }
 
 

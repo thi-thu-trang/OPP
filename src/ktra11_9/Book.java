@@ -39,23 +39,21 @@ public class Book extends Media implements InOut {
 
     @Override
     public void Input() {
-        super.toString();
+        super.Input();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insert page: ");
         page = scanner.nextDouble();
         System.out.println("Insert Author");
-        Author = scanner.nextLine();
+        Author = scanner.next();
 
     }
 
 
     @Override
     public String show() {
-        return "Book{" +
+        return "Book{" + super.show() +
                 "page=" + page +
                 ", Author='" + Author + '\'' +
-                ", Name='" + Name + '\'' +
-                ", price=" + price +
                 '}';
     }
 }
