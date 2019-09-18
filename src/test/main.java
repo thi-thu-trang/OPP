@@ -3,25 +3,21 @@ package test;
 import java.util.*;
 
 public class main {
-    List<Student> students = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
+    public static List<Student> students = new ArrayList<>();
 
     public static void main(String[] args) {
-
-        List<Student> students = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Add student.");
+        System.out.println("2. Edit student by id.");
+        System.out.println("3.Delete student by id");
+        System.out.println("4. Sort student by gpa.");
+        System.out.println("5. Sort student by name.");
+        System.out.println("6. Show student.");
+        System.out.println("0. Exit");
 
         do {
-            int n = 0;
-            System.out.println("1. Add student.");
-            System.out.println("2. Edit student by id.");
-            System.out.println("3.Delete student by id");
-            System.out.println("4. Sort student by gpa.");
-            System.out.println("5. Sort student by name.");
-            System.out.println("6. Show student.");
-            System.out.println("0. Exit");
             System.out.printf("please choose: ");
-            n = scanner.nextInt();
+            int n = scanner.nextInt();
             switch (n) {
                 case 1: {
                     inputStudent();
@@ -36,6 +32,7 @@ public class main {
                         timraroi = inputStudent();
                     });
                 }
+                break;
                 case 3: {
                     Student student = new Student();
                     System.out.println("Nhap id: ");
@@ -66,12 +63,13 @@ public class main {
                     }
                     break;
                 }
-                case 6: {
-                    for (Student student : students) {
-                        System.out.println(student.toString());
+                case 6:
+                    for (Student student1 : students) {
+                        System.out.println(student1.toString());
                     }
                     break;
-                }
+
+
                 case 0: {
                     System.exit(0);
                 }
